@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Motocicleta</title>
+
+    <link rel="stylesheet" href="CSS/Style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="JS/Script1.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Estoque de Moto</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>Motocicletas</h2>
+            <span>Listagem de motocicleta</span>
+        </div>
+
+        <div class="card">
+
+            <div class="dadosInput">
+                <label>Marca</label>
+                <input type="text" id="marca" placeholder="Marca da Motocicleta">
+            </div>
+            <div class="dadosInput">
+                <label>Modelo</label>
+                <input type="text" id="modelo" placeholder="Modelo da Motocicleta">
+            </div>
+            <div class="dadosInput">
+                <label>Ano de Fabricação</label>
+                <input type="text" id="anoDeFabricacao" placeholder="Ano da Motocicleta">
+            </div>
+            <div class="dadosInput">
+                <label>valor</label>
+                <input type="text" id="valor" placeholder="Valor da Motocicleta">
+            </div>
+
+            <button onclick="motocicleta.adicionar()">Adicionar</button>
+            <button onclick="motocicleta.excluir()">Deletar</button>
+        </div>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">SKU</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano de Fabricação</th>
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">1</td>
+                        <td>Honda</td>
+                        <td>CG Titan 150</td>
+                        <td>2004</td>
+                        <td>7000</td>
+                        <td class="center">
+                            <img src="img/editar.png" alt="">
+                            <img src="img/botao-apagar.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
