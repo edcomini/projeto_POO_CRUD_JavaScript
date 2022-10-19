@@ -42,11 +42,11 @@
             </div>
             <div class="dadosInput">
                 <label>valor</label>
-                <input type="text" id="valor" placeholder="Valor da Motocicleta">
+                <input type="number" id="valor" placeholder="Valor da Motocicleta">
             </div>
 
-            <button onclick="motocicleta.adicionar()">Adicionar</button>
-            <button onclick="motocicleta.excluir()">Deletar</button>
+            <button onclick="motocicleta.salvar()" id="btn1" >Salvar</button>
+            <button onclick="motocicleta.cancelar()">Cancelar</button>
         </div>
         <div class="content">
             <table border="1">
@@ -58,18 +58,10 @@
                     <th>Valor</th>
                     <th class="center">Ações</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="center">1</td>
-                        <td>Honda</td>
-                        <td>CG Titan 150</td>
-                        <td>2004</td>
-                        <td>7000</td>
-                        <td class="center">
-                            <img src="img/editar.png" alt="">
-                            <img src="img/botao-apagar.png" alt="">
-                        </td>
-                    </tr>
+                <tbody id="tbody">
+                    
+                    
+
                 </tbody>
             </table>
         </div>
