@@ -1,2 +1,2 @@
 # projeto_POO_CRUD_JavaScript
- Conceito de POO usando JavaScript na criação de CRUD
+O formulário apresentado ao usuário foi construído com base em POO. O usuário pode inserir, alterar e excluir os dados. 
